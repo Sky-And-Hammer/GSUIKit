@@ -230,7 +230,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/GSStability.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/HandyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 			);
 			name = Carthage;
