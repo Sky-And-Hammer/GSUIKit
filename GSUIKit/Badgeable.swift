@@ -1,23 +1,24 @@
 //
-//  BadgeView.swift
+//  Badgeable.swift
 //  GSUIKit
 //
-//  Created by 孟钰丰 on 2017/12/16.
+//  Created by 孟钰丰 on 2017/12/20.
 //  Copyright © 2017年 孟钰丰. All rights reserved.
 //
 
-import Foundation
-import GSStability
+// MARK: - BadgableStyle
 
 /// - dot: 原点
 /// - number: 数字
 /// - text: 文本
 /// - new: ‘new’
-public enum BadgeViewStyle {
+public enum BadgableStyle {
     case dot, number, text, new
 }
 
-public enum BadgeViewAnimation: String {
+// MARK: - BadgableAnimation
+
+public enum BadgableAnimation: String {
     case none
     case scale
     case shake
@@ -76,27 +77,28 @@ public enum BadgeViewAnimation: String {
     }
 }
 
+
 // MARK: - BadgeView
 
-public class BadgeView: UILabel {
+public final class BadgeView: UILabel {
     
-    /// <#Description#>
+    /// BadgableStyle.number 时 最大数
     open var limitNumber = 99
-    /// <#Description#>
+    /// BadgableStyle.number 时 等于0 会隐藏
     open var hideOnZero = true
     /// <#Description#>
     open var scaleContent = false
-    /// <#Description#>
-    open var style = BadgeViewStyle.dot { didSet { text = _textStorage } }
-    /// <#Description#>
-    open var animation = BadgeViewAnimation.none { didSet { animation.animateLayer(forLayer: layer) } }
-    /// <#Description#>
+    /// BadgableStyle
+    open var style = BadgableStyle.dot { didSet { text = _textStorage } }
+    /// BadgableAnimation
+    open var animation = BadgableAnimation.none { didSet { animation.animateLayer(forLayer: layer) } }
+    /// 最小显示大小
     open var minSize = CGSize.init(width: 12, height: 12) { didSet { sizeToFit(); text = _textStorage } }
-    /// <#Description#>
+    /// 相对偏移位置
     open var offsets: CGPoint! = nil {
         didSet {
-            if oldValue == nil { snp.makeConstraints { $0.center.equalTo(offsets) }
-            } else { snp.updateConstraints { $0.center.equalTo(offsets) } }
+            if oldValue == nil { snp.makeConstraints { $0.center.equalTo(offsets) } }
+            else { snp.updateConstraints { $0.center.equalTo(offsets) } }
         }
     }
     
@@ -125,18 +127,15 @@ public class BadgeView: UILabel {
                 $0.width.equalTo(bounds.width)
                 $0.height.equalTo(bounds.height)
             }
-            setNeedsLayout()
             
+            setNeedsLayout()
             if visible && scaleContent { show(animated: true) }
             
             guard let text = self.text else { return }
             if hideOnZero {
                 switch style {
-                case .number:
-                    guard let value = Int(text) else { return }
-                    isHidden = value == 0
-                case .text:
-                    isHidden = text.isEmpty
+                case .number: guard let value = Int(text) else { return }; isHidden = value == 0
+                case .text: isHidden = text.isEmpty
                 default: break
                 }
             } else { isHidden = false }
@@ -144,9 +143,7 @@ public class BadgeView: UILabel {
     }
     
     fileprivate var _textStorage = ""
-    fileprivate var visible: Bool {
-        return superview != nil && !isHidden && alpha > 0
-    }
+    fileprivate var visible: Bool { return superview != nil && !isHidden && alpha > 0 }
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -195,12 +192,14 @@ public class BadgeView: UILabel {
     }
 }
 
-// MARK: - UIView
+
+// MARK: - UIView Extension
 
 private var kSJBBadgeView = "\(#file)+\(#line)"
 
 extension UIView {
     
+    /// BadgeView 对象
     public var badgeView: BadgeView {
         get {
             guard !(self is BadgeView) else { fatalError("You can not add a badge in badge!!!") }
@@ -208,13 +207,12 @@ extension UIView {
             if let value = objc_getAssociatedObject(self, &kSJBBadgeView) as? BadgeView { return value }
             else {
                 return BadgeView.init().then {
-                    _add($0)
+                    gs.add($0)
                     
                     bringSubview(toFront: $0)
                     self.badgeView = $0
                 }
             }
-            
         }
         
         set { objc_setAssociatedObject(self, &kSJBBadgeView, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)}
@@ -223,18 +221,32 @@ extension UIView {
 
 // MARK: - Badgeable
 
+/// Badgeable 协议
 public protocol Badgeable {
     
+    /// BadgeView 的承载 view
     var containerView: UIView { get }
     
-    func assmbilingBadge(_ closure: (BadgeView) -> Void)
+    /// 配置 BadgeVie 属性
+    /// - 默认实现
+    func assembling(_ closure: (BadgeView) -> Void)
+    
+    /// 显示 BadgeView
+    /// - 默认实现
+    ///
+    /// - Parameter animated: 是否使用动画
     func showBadge(animated: Bool)
+    
+    /// 隐藏 BadgeView
+    /// - 默认实现
+    ///
+    /// - Parameter animated: 是否使用动画
     func hideBadge(animated: Bool)
 }
 
 public extension Badgeable {
     
-    func assmbilingBadge(_ closure: (BadgeView) -> Void) { closure(containerView.badgeView) }
+    func assembling(_ closure: (BadgeView) -> Void) { closure(containerView.badgeView) }
     func showBadge(animated: Bool) { containerView.badgeView.show(animated: animated) }
     func hideBadge(animated: Bool) { containerView.badgeView.hide(animated: animated) }
 }
@@ -242,13 +254,11 @@ public extension Badgeable {
 // MARK: - Badgeable & UIView
 
 extension UIView: Badgeable {
-    
     public var containerView: UIView { return self }
 }
 
 // MARK: - Badgeable & UITabbarItem
 
-extension UITabBarItem: Compatible {}
 extension UITabBarItem: Badgeable {
     public var containerView: UIView {
         let tabBarButton = value(forKey: "_view") as? UIView ?? UIView()
@@ -264,9 +274,7 @@ extension UITabBarItem: Badgeable {
 
 // MARK: - Badgeable & UINavigationItem
 
-extension UINavigationItem: Compatible {}
 extension UINavigationItem: Badgeable {
-    
     public var containerView: UIView {
         let navigationButton = value(forKey: "_view") as? UIView ?? UIView()
         for view in navigationButton.subviews {
@@ -286,5 +294,8 @@ extension UINavigationItem: Badgeable {
         return navigationButton
     }
 }
+
+
+
 
 

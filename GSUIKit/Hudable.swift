@@ -6,7 +6,6 @@
 //  Copyright © 2017年 孟钰丰. All rights reserved.
 //
 
-import Foundation
 import GSFoundation
 import GSStability
 import SnapKit
@@ -236,7 +235,7 @@ final class SJBHud {
         }
         
         containers[type] = tuple
-        view._add(tuple.0.then {
+        view.gs.add(tuple.0.then {
             $0.backgroundColor = UIColor.clear
         }) {
             $0.top.equalToSuperview().offset(view.bounds.origin.y)
@@ -272,7 +271,7 @@ final class HUDContainer: UIView {
         set {
             _contnet.removeFromSuperview()
             _contnet = newValue
-            _add(_contnet) {
+            gs.add(_contnet) {
                 self.type.constraintClosure($0, self)
                 
             }

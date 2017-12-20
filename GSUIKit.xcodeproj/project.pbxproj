@@ -11,18 +11,11 @@
 		EDA3FCF61FE506D40025C218 /* GSUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FCF51FE506D40025C218 /* GSUIKitTests.swift */; };
 		EDA3FCF81FE506D40025C218 /* GSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA3FCEA1FE506D40025C218 /* GSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDA3FD2C1FE50BC80025C218 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD2B1FE50BC80025C218 /* Structs.swift */; };
-		EDA3FD2E1FE50E5D0025C218 /* Cornerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD2D1FE50E5D0025C218 /* Cornerable.swift */; };
 		EDA3FD301FE50F8E0025C218 /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD2F1FE50F8E0025C218 /* ViewProtocols.swift */; };
 		EDA3FD321FE510840025C218 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD311FE510840025C218 /* Extensions.swift */; };
 		EDA3FD341FE511F00025C218 /* Compatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD331FE511F00025C218 /* Compatible.swift */; };
-		EDA3FD361FE515510025C218 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD351FE515510025C218 /* ImageCache.swift */; };
-		EDA3FD391FE517920025C218 /* Placeholderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD381FE517920025C218 /* Placeholderable.swift */; };
-		EDA3FD3B1FE518BC0025C218 /* NavigationBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD3A1FE518BC0025C218 /* NavigationBarItem.swift */; };
-		EDA3FD3D1FE519CD0025C218 /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD3C1FE519CD0025C218 /* Refresher.swift */; };
-		EDA3FD3F1FE51ACF0025C218 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD3E1FE51ACF0025C218 /* BadgeView.swift */; };
 		EDA3FD411FE51BB70025C218 /* Hudable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD401FE51BB70025C218 /* Hudable.swift */; };
-		EDA3FD431FE51CEC0025C218 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD421FE51CEC0025C218 /* SegmentedControl.swift */; };
-		EDA3FD451FE51E310025C218 /* PixelLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FD441FE51E310025C218 /* PixelLineView.swift */; };
+		EDE0DD5B1FEA7A48007975CA /* Badgeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DD5A1FEA7A48007975CA /* Badgeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,18 +36,11 @@
 		EDA3FCF51FE506D40025C218 /* GSUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSUIKitTests.swift; sourceTree = "<group>"; };
 		EDA3FCF71FE506D40025C218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA3FD2B1FE50BC80025C218 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
-		EDA3FD2D1FE50E5D0025C218 /* Cornerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cornerable.swift; sourceTree = "<group>"; };
 		EDA3FD2F1FE50F8E0025C218 /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
 		EDA3FD311FE510840025C218 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EDA3FD331FE511F00025C218 /* Compatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compatible.swift; sourceTree = "<group>"; };
-		EDA3FD351FE515510025C218 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
-		EDA3FD381FE517920025C218 /* Placeholderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholderable.swift; sourceTree = "<group>"; };
-		EDA3FD3A1FE518BC0025C218 /* NavigationBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItem.swift; sourceTree = "<group>"; };
-		EDA3FD3C1FE519CD0025C218 /* Refresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refresher.swift; sourceTree = "<group>"; };
-		EDA3FD3E1FE51ACF0025C218 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		EDA3FD401FE51BB70025C218 /* Hudable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hudable.swift; sourceTree = "<group>"; };
-		EDA3FD421FE51CEC0025C218 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
-		EDA3FD441FE51E310025C218 /* PixelLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelLineView.swift; sourceTree = "<group>"; };
+		EDE0DD5A1FEA7A48007975CA /* Badgeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badgeable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +86,6 @@
 				EDA3FD371FE517730025C218 /* Protocols */,
 				EDA3FD311FE510840025C218 /* Extensions.swift */,
 				EDA3FD2B1FE50BC80025C218 /* Structs.swift */,
-				EDA3FD351FE515510025C218 /* ImageCache.swift */,
-				EDA3FD3A1FE518BC0025C218 /* NavigationBarItem.swift */,
-				EDA3FD421FE51CEC0025C218 /* SegmentedControl.swift */,
-				EDA3FD3C1FE519CD0025C218 /* Refresher.swift */,
-				EDA3FD3E1FE51ACF0025C218 /* BadgeView.swift */,
-				EDA3FD441FE51E310025C218 /* PixelLineView.swift */,
 				EDA3FCEA1FE506D40025C218 /* GSUIKit.h */,
 				EDA3FCEB1FE506D40025C218 /* Info.plist */,
 			);
@@ -125,10 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				EDA3FD331FE511F00025C218 /* Compatible.swift */,
-				EDA3FD2D1FE50E5D0025C218 /* Cornerable.swift */,
-				EDA3FD381FE517920025C218 /* Placeholderable.swift */,
 				EDA3FD2F1FE50F8E0025C218 /* ViewProtocols.swift */,
 				EDA3FD401FE51BB70025C218 /* Hudable.swift */,
+				EDE0DD5A1FEA7A48007975CA /* Badgeable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -269,17 +248,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDA3FD411FE51BB70025C218 /* Hudable.swift in Sources */,
-				EDA3FD361FE515510025C218 /* ImageCache.swift in Sources */,
-				EDA3FD2E1FE50E5D0025C218 /* Cornerable.swift in Sources */,
+				EDE0DD5B1FEA7A48007975CA /* Badgeable.swift in Sources */,
 				EDA3FD301FE50F8E0025C218 /* ViewProtocols.swift in Sources */,
 				EDA3FD341FE511F00025C218 /* Compatible.swift in Sources */,
 				EDA3FD2C1FE50BC80025C218 /* Structs.swift in Sources */,
-				EDA3FD391FE517920025C218 /* Placeholderable.swift in Sources */,
-				EDA3FD451FE51E310025C218 /* PixelLineView.swift in Sources */,
-				EDA3FD3F1FE51ACF0025C218 /* BadgeView.swift in Sources */,
-				EDA3FD3B1FE518BC0025C218 /* NavigationBarItem.swift in Sources */,
-				EDA3FD3D1FE519CD0025C218 /* Refresher.swift in Sources */,
-				EDA3FD431FE51CEC0025C218 /* SegmentedControl.swift in Sources */,
 				EDA3FD321FE510840025C218 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

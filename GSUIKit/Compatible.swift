@@ -6,15 +6,13 @@
 //  Copyright © 2017年 孟钰丰. All rights reserved.
 //
 
-import Foundation
 import GSStability
 import GSFoundation
-import Kingfisher
+import SnapKit
 
-// MARK: - Compatible for UIKit
+// MARK: - Compatible for UIResponder
 
-extension UIView: Compatible {}
-extension UIViewController: Compatible {}
+extension UIResponder: Compatible {}
 
 // MARK: - UIViewController
 
@@ -25,7 +23,6 @@ extension GS where Base: UIViewController {
         if #available(iOS 11.0, *) { scrollView?.contentInsetAdjustmentBehavior = .never }
         else { base.automaticallyAdjustsScrollViewInsets = false }
     }
-    
     
     /// like UIViewController.push
     ///
@@ -69,20 +66,27 @@ extension GS where Base: UIViewController {
 // MARK: - UIView
 
 extension GS where Base: UIView {
+    
+    /// 方便去 addsubview 同时配置约束布局条件
+    ///
+    /// - Parameters:
+    ///   - view: 要添加的 subview
+    ///   - closure: 约束 closure
+    public func add(_ view: UIView, _ closure: ((ConstraintMaker) -> Void)? = nil) {
+        // 如果已经添加到 superview 同时 superview != self， 以防止 'draw(_ rect: CGRect)' 重复调用
+        guard view.superview != base else { return }
+        view.removeFromSuperview()
+        
+        base.addSubview(view)
+        guard let closure = closure else { return }
+        
+        view.snp.makeConstraints(closure)
+    }
+    
     /// 删除 view 的subview
     ///
     /// - Parameter closure: 是否删除的闭包判断
     public func removeSubviews(_ closure: ((UIView) -> Bool)? = nil) { base.subviews.forEach { if closure?($0) ?? true { $0.removeFromSuperview() } } }
-    
-    /// 设置 view 的圆角
-    ///
-    /// - Parameter radiuse: radiuse
-    public func corner(`for` radius: CGFloat) { base.radius = radius }
-    
-    /// 设置 view 侧面半圆 或者直接变圆
-    ///
-    /// - Parameter isCircle:
-    public func circle(isCircle: Bool) { base.isCircle = isCircle }
 }
 
 // MARK: - UITableView

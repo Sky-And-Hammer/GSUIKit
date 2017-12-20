@@ -20,6 +20,11 @@ public func _scale(_ value: CGFloat) -> CGFloat {
     return floor(value / 375.0 * UIScreen.main.bounds.width)
 }
 
+/// 标准 1px 的宽度
+public var PixelValue: CGFloat {
+    return 1 / UIScreen.main.scale
+}
+
 // MARK: - UIImage
 
 extension UIImage {
@@ -41,26 +46,6 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image
-    }
-}
-
-// MARK: - UIView
-extension UIView {
-    
-    /// 方便去 addsubview 同时配置约束布局条件
-    ///
-    /// - Parameters:
-    ///   - view: 要添加的 subview
-    ///   - closure: 约束 closure
-    public func _add(_ view: UIView, _ closure: ((ConstraintMaker) -> Void)? = nil) {
-        // 如果已经添加到 superview 同时 superview != self， 以防止 'draw(_ rect: CGRect)' 重复调用
-        guard view.superview != self else { return }
-        view.removeFromSuperview()
-        
-        self.addSubview(view)
-        guard let closure = closure else { return }
-        
-        view.snp.makeConstraints(closure)
     }
 }
 
@@ -106,7 +91,6 @@ extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
 }
-// MARK: - Internal
 
 // MARK: - UIControl
 
@@ -114,7 +98,7 @@ private var kGSTouchEdgeInset = "\(#file)+\(#line)"
 extension UIControl {
     
     /// 点击区域的偏移量
-    var touchEdgeInset: UIEdgeInsets {
+    public var touchEdgeInset: UIEdgeInsets {
         get { return objc_getAssociatedObject(self, &kGSTouchEdgeInset) as? UIEdgeInsets ?? UIEdgeInsets.zero }
         set { objc_setAssociatedObject(self, &kGSTouchEdgeInset, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
@@ -130,19 +114,32 @@ extension UIControl {
     }
 }
 
-extension UITableView {
+// MARK: - UITableView
+
+public extension UITableView {
     
-    var canScrollToBotton: Bool { return contentSize.height > bounds.size.height }
+    /// 是否可以滚动到底部
+    public var canScrollToBotton: Bool { return contentSize.height > bounds.size.height }
     
-    var isAtBottom: Bool { return contentSize.height - bounds.size.height == contentOffset.y }
+    /// 当前是否在底部
+    public var isAtBottom: Bool { return contentSize.height - bounds.size.height == contentOffset.y }
     
-    var isAtTop: Bool { return contentOffset.y == 0 }
+    /// 当前是否在顶部
+    public var isAtTop: Bool { return contentOffset.y == 0 }
 }
 
 // MARK: - Then
 
 extension Then where Self: UITableViewCell {
     
+    
+    /// 方便去 给 cell 赋值属性
+    /// For example:
+    ///     return tableView.dequeueReusableCell(withIdentifier: "HomeContentCell", for: indexPath).then({ (cell: HomeContentCell?) in
+    ///         cell?.todo...
+    ///     })
+    ///
+    /// - Parameter closure: 赋值 closure
     public func then<T: UITableViewCell>(_ closure:(T?) -> Void) -> Self {
         closure(self as? T)
         return self
@@ -151,6 +148,13 @@ extension Then where Self: UITableViewCell {
 
 extension Then where Self: UICollectionViewCell {
     
+    /// 方便去 给 cell 赋值属性
+    /// For example:
+    ///     return collectionView.dequeueReusableCell(withIdentifier: "HomeContentCell", for: indexPath).then({ (cell: HomeContentCell?) in
+    ///         cell?.todo...
+    ///     })
+    ///
+    /// - Parameter closure: 赋值 closure
     public func then<T: UICollectionViewCell>(_ closure:(T?) -> Void) -> Self {
         closure(self as? T)
         return self

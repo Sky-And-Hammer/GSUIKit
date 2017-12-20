@@ -6,8 +6,6 @@
 //  Copyright © 2017年 孟钰丰. All rights reserved.
 //
 
-import Foundation
-
 /// ViewAssmbling
 public protocol ViewAssmbling: class {
     
