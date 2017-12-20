@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HUDContentType Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/HUDContentType" class="dashAnchor"></a>
+    <a title="HUDContentType Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (69% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HUDContentType Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BadgeView.html">BadgeView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HUDContainer.html">HUDContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HUDContentType.html">HUDContentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SJBHud.html">SJBHud</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:7GSUIKit10PixelValue12CoreGraphics7CGFloatVv">PixelValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BadgableAnimation.html">BadgableAnimation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BadgableStyle.html">BadgableStyle</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/GS.html">GS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Then.html">Then</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIControl.html">UIControl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UINavigationItem.html">UINavigationItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITabBarItem.html">UITabBarItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableView.html">UITableView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:7GSUIKit2eeoiSbAA14HUDContentTypeC_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:7GSUIKit6_scale12CoreGraphics7CGFloatVAEF">_scale(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Badgeable.html">Badgeable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CellIndieable.html">CellIndieable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Hudable.html">Hudable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Sectionabel.html">Sectionabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ViewAssmbling.html">ViewAssmbling</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ViewIndieable.html">ViewIndieable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:7GSUIKit6ColorsV">Colors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Fonts.html">Fonts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:7GSUIKit6ImagesV">Images</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HUDContentType</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HUDContentType</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                </div>
+              </div>
+            <p>展示 hud 的数据源</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s8HashableP9hashValueSiv"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s8HashableP9hashValueSiv">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC8rawValueSo6UIViewCv"></a>
+                    <a name="//apple_ref/swift/Property/rawValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC8rawValueSo6UIViewCv">rawValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HUDContentType</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC17constraintClosurey7SnapKit15ConstraintMakerC_So6UIViewCtcv"></a>
+                    <a name="//apple_ref/swift/Property/constraintClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC17constraintClosurey7SnapKit15ConstraintMakerC_So6UIViewCtcv">constraintClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>(ConstraintMaker, container view)
+hud content view 与 对应 HUDContainer 约束条件设置闭包.
+直接展示的话 设置 约束条件就可以，如果需要出现动画，则需直接指定 frame，同时 subviews 也不可以使用自动布局</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">constraintClosure</span><span class="p">:</span> <span class="p">((</span><span class="kt">ConstraintMaker</span><span class="p">,</span> <span class="kt">UIView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span> <span class="n">_</span><span class="p">,</span><span class="n">_</span>  <span class="k">in</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC11targetColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/targetColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC11targetColorSo7UIColorCv">targetColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>hud container 的背景色</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">targetColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="p">(</span><span class="nv">white</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="mf">0.25</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC24isUserInteractionEnabledSbv"></a>
+                    <a name="//apple_ref/swift/Property/isUserInteractionEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC24isUserInteractionEnabledSbv">isUserInteractionEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>是否允许用户点击</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isUserInteractionEnabled</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC21isAutoDissmissByTouchSbv"></a>
+                    <a name="//apple_ref/swift/Property/isAutoDissmissByTouch" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC21isAutoDissmissByTouchSbv">isAutoDissmissByTouch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>是否点击后自动消失</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isAutoDissmissByTouch</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC14isAutoDissmiss8Dispatch0G12TimeIntervalOycSgv"></a>
+                    <a name="//apple_ref/swift/Property/isAutoDissmiss" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC14isAutoDissmiss8Dispatch0G12TimeIntervalOycSgv">isAutoDissmiss</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>是否自动消失</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isAutoDissmiss</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">DispatchTimeInterval</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC14appearDurationSdv"></a>
+                    <a name="//apple_ref/swift/Property/appearDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC14appearDurationSdv">appearDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>显示的动画时间</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">appearDuration</span> <span class="o">=</span> <span class="mf">0.25</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC13appearClosureySo6UIViewCcSgv"></a>
+                    <a name="//apple_ref/swift/Property/appearClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC13appearClosureySo6UIViewCcSgv">appearClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>显示的 hud 自定义闭包</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">appearClosure</span><span class="p">:</span> <span class="p">((</span><span class="kt">UIView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC18retryAppearClosureyycSgv"></a>
+                    <a name="//apple_ref/swift/Property/retryAppearClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC18retryAppearClosureyycSgv">retryAppearClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>app恢复前台后调用</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">retryAppearClosure</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC17disappearDurationSdv"></a>
+                    <a name="//apple_ref/swift/Property/disappearDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC17disappearDurationSdv">disappearDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>消失的动画时间</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">disappearDuration</span> <span class="o">=</span> <span class="mf">0.3</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC16disappearClosureySo6UIViewCcSgv"></a>
+                    <a name="//apple_ref/swift/Property/disappearClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC16disappearClosureySo6UIViewCcSgv">disappearClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>消失的 hud 自定义闭包</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">disappearClosure</span><span class="p">:</span> <span class="p">((</span><span class="kt">UIView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC12touchClosureyycv"></a>
+                    <a name="//apple_ref/swift/Property/touchClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC12touchClosureyycv">touchClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>点击后的闭包</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">touchClosure</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="o">=</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeCACSo6UIViewCyXK8rawValue_SS10identifiertcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(rawValue:identifier:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeCACSo6UIViewCyXK8rawValue_SS10identifiertcfc">init(rawValue:identifier:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>init 方法.
+For example:</p>
+<pre class="highlight plaintext"><code>public static let indicator = HUDContentType(rawValue: HudIndicatorView(), identifier: HudIndicatorView.description()).then {
+    $0.isUserInteractionEnabled = false
+    $0.targetColor = UIColor(hexString: "eeeeee")
+    $0.appearClosure = {
+        guard let view = $0 as? HudIndicatorView else { return }
+        view.indicatorView.startAnimating()
+        view.alpha = 1
+    }
+    $0.disappearClosure = {
+        guard let view = $0 as? HudIndicatorView else { return }
+        view.indicatorView.stopAnimating()
+        view.alpha = 0
+    }
+    $0.constraintClosure = {
+        $0.center.equalToSuperview()
+        $0.width.height.equalTo(_scale(50))
+    }
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rawValue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>identifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>相同 identifier 的同时只允许显示一个</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7GSUIKit14HUDContentTypeC4thenACyACcF"></a>
+                    <a name="//apple_ref/swift/Method/then(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7GSUIKit14HUDContentTypeC4thenACyACcF">then(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HUDContentType</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-12-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
