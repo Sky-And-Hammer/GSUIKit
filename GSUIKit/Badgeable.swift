@@ -229,7 +229,7 @@ public protocol Badgeable {
     
     /// 配置 BadgeVie 属性
     /// - 默认实现
-    func assembling(_ closure: (BadgeView) -> Void)
+    func badgeViewUpdated(_ closure: (BadgeView) -> Void)
     
     /// 显示 BadgeView
     /// - 默认实现
@@ -246,7 +246,7 @@ public protocol Badgeable {
 
 public extension Badgeable {
     
-    func assembling(_ closure: (BadgeView) -> Void) { closure(containerView.badgeView) }
+    func badgeViewUpdated(_ closure: (BadgeView) -> Void) { closure(containerView.badgeView) }
     func showBadge(animated: Bool) { containerView.badgeView.show(animated: animated) }
     func hideBadge(animated: Bool) { containerView.badgeView.hide(animated: animated) }
 }
