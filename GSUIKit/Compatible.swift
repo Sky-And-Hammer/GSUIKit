@@ -60,6 +60,8 @@ extension GS where Base: UIViewController {
     public func dismiss(animated: Bool, completion: (() -> Void)? = nil) {
         base.dismiss(animated: animated, completion: completion)
     }
+    
+    
 }
 
 
@@ -87,6 +89,42 @@ extension GS where Base: UIView {
     ///
     /// - Parameter closure: 是否删除的闭包判断
     public func removeSubviews(_ closure: ((UIView) -> Bool)? = nil) { base.subviews.forEach { if closure?($0) ?? true { $0.removeFromSuperview() } } }
+    
+    /// 添加点击事件
+    public func whenTap(_ closure: @escaping () -> Void) {
+        guard (base.gestureRecognizers?.filter { $0.isKind(of: _GSTapGestureRecognizer.self) } ?? []).count == 0 else { return }
+        let gesture = _GSTapGestureRecognizer.init { (_, state, _) in if state == .recognized { closure() } }.then {
+            $0.numberOfTouchesRequired = 1
+            $0.numberOfTapsRequired = 1
+        }
+        
+        base.gestureRecognizers?.forEach {
+            guard let tap = $0 as? UITapGestureRecognizer else { return }
+            if tap.numberOfTapsRequired == gesture.numberOfTapsRequired
+                && tap.numberOfTouchesRequired == gesture.numberOfTouchesRequired {
+                gesture.require(toFail: tap)
+            }
+        }
+        
+        base.addGestureRecognizer(gesture)
+    }
+    
+    final class _GSTapGestureRecognizer: UITapGestureRecognizer {
+        
+        var allowHandler = false
+        var handler: (UIGestureRecognizer, UIGestureRecognizerState, CGPoint) -> Void
+        
+        init(handler: @escaping (UIGestureRecognizer, UIGestureRecognizerState, CGPoint) -> Void) {
+            self.handler = handler
+            super.init(target: self, action: #selector(handleAction(_:)))
+        }
+        
+        @objc func handleAction(_ sender: UIGestureRecognizer) {
+            guard  allowHandler else { return }
+            
+            handler(sender, sender.state, self.location(in: self.view))
+        }
+    }
 }
 
 // MARK: - UITableView
