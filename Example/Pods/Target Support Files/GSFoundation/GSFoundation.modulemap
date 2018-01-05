@@ -1,0 +1,6 @@
+framework module GSFoundation {
+  umbrella header "GSFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}

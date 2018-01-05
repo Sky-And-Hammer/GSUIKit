@@ -1,0 +1,14 @@
+source 'git@github.com:Sky-And-Hammer/CocoaPodsSpec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+target 'GSUIKit_Example' do
+  pod 'GSUIKit', :path => '../'
+
+  target 'GSUIKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

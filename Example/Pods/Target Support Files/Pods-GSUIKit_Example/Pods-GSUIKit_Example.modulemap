@@ -1,0 +1,6 @@
+framework module Pods_GSUIKit_Example {
+  umbrella header "Pods-GSUIKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

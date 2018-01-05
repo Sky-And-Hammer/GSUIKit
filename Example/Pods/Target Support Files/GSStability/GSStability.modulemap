@@ -1,0 +1,6 @@
+framework module GSStability {
+  umbrella header "GSStability-umbrella.h"
+
+  export *
+  module * { export * }
+}

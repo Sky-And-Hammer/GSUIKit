@@ -1,0 +1,6 @@
+framework module GSUIKit {
+  umbrella header "GSUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
