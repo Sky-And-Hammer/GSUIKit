@@ -1,9 +1,9 @@
 {
   "name": "GSUIKit",
-  "version": "0.1.0",
-  "summary": "A short description of GSUIKit.",
+  "version": "0.6.0",
+  "summary": "GSFoundation BY GLOOMY.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/GloomySunday049/GSUIKit",
+  "homepage": "https://github.com/Sky-And-Hammer/GSUIKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "GloomySunday049": "121055230@qq.com"
   },
   "source": {
-    "git": "https://github.com/GloomySunday049/GSUIKit.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Sky-And-Hammer/GSUIKit.git",
+    "tag": "0.6.0"
   },
   "platforms": {
     "ios": "8.0"

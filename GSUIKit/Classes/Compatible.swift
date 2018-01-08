@@ -69,6 +69,14 @@ extension GS where Base: UIViewController {
 
 extension GS where Base: UIView {
     
+    var snp: ConstraintBasicAttributesDSL {
+        if #available(iOS 11.0, *) {
+            return base.safeAreaLayoutGuide.snp
+        } else {
+            return base.snp
+        }
+    }
+    
     /// 方便去 addsubview 同时配置约束布局条件
     ///
     /// - Parameters:

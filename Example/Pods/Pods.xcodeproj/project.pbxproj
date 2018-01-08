@@ -181,12 +181,12 @@
 		0D384CB655194DEC0ABB443B450A4FE2 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = GSStability/Classes/Errors.swift; sourceTree = "<group>"; };
 		0E73CE98EA296CB1F47145452B4A05B8 /* Pods-GSUIKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSUIKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		0F0E7325AA1A0C722005E20401D7E7B9 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
-		0F7D38876CA7040CA4D31F18628456C9 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		0F7D38876CA7040CA4D31F18628456C9 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		106BC79C2E212C12898DF650F4F588DD /* GSUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSUIKit-umbrella.h"; sourceTree = "<group>"; };
 		14C07E4DBF983ABA51C30969AFB4944A /* GSStability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GSStability-dummy.m"; sourceTree = "<group>"; };
 		163F5B0A1DB3996E62141A1C31E428B7 /* Hudable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hudable.swift; path = GSUIKit/Classes/Hudable.swift; sourceTree = "<group>"; };
 		166D26B2D2FCDBE31EC3A028AF133402 /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
-		199010BF704E3E9F27E40E715A7D3B6A /* Pods_GSUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		199010BF704E3E9F27E40E715A7D3B6A /* Pods_GSUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GSUIKit_Example.framework; path = "Pods-GSUIKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0339335849E405FC86D81E11D81149 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		1DCCF0C730EBB4C41F2BB6159C19DEC2 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
 		261555B8186C6DC97347B579AEB9AD23 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 		29C89D99FB32808BF6E3264820B8EA70 /* GSFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD0292EC2B45C163A41276ACA9D6C28 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		2DBFBBE7F1764F2909278AAD231C7CE1 /* Badgeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Badgeable.swift; path = GSUIKit/Classes/Badgeable.swift; sourceTree = "<group>"; };
-		31725036F527AF65AFD57557E864CC01 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31725036F527AF65AFD57557E864CC01 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CA5FD1E9B2D8A2A5B9102EDE09758E /* Timer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = GSFoundation/Classes/Timer.swift; sourceTree = "<group>"; };
 		39992659C765FD575D7960EE94ED2CDF /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = GSUIKit/Classes/Extensions.swift; sourceTree = "<group>"; };
 		3DA8752AEE4951CB9ECF99FD7C07F1B8 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
@@ -215,7 +215,7 @@
 		5970E1B9E88AAC350C443803F6E6C6DD /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		5CAE1909BE1AC7F7B35A413A28E6BE72 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		5D3B72C3225BE03D779D06AE7B3FCF48 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = GSStability/Classes/Notifications.swift; sourceTree = "<group>"; };
-		5E80B176665D58DFDDD9561DE884532A /* GSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E80B176665D58DFDDD9561DE884532A /* GSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GSUIKit.framework; path = GSUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5117CD4DE1B3EC7B76B1F534A8D8FF /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = GSFoundation/Classes/Extensions.swift; sourceTree = "<group>"; };
 		62420FB57CA4FEFF1CAD07F42943943E /* GSFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GSFoundation.xcconfig; sourceTree = "<group>"; };
 		63A37C5E2E45AD0AB7C134E47B30E75C /* MethodSwizzle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MethodSwizzle.swift; path = GSFoundation/Classes/MethodSwizzle.swift; sourceTree = "<group>"; };
@@ -225,7 +225,7 @@
 		6CC0C0AB352C7677F193B9A16BE14006 /* Keychains.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychains.swift; path = GSFoundation/Classes/Keychains.swift; sourceTree = "<group>"; };
 		6E6443AE7FD0C6AE91C3694796656085 /* GSUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GSUIKit.xcconfig; sourceTree = "<group>"; };
 		72F020935D6373060A1388106411A0FA /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
-		748DE48AE8ADDF398B424E7B967CEF2B /* GSFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GSFoundation.modulemap; sourceTree = "<group>"; };
+		748DE48AE8ADDF398B424E7B967CEF2B /* GSFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GSFoundation.modulemap; sourceTree = "<group>"; };
 		755A93A2E7E8F9E98CA4B67CA7F82D99 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		7860DEA1B65104D83D8EB2FB292309CA /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		78BCD2572870C508FE566A7373D21294 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
@@ -236,26 +236,26 @@
 		8A6420FF20F0FF0DF9BF0556043C55E1 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		8BA74904A48167857C674107830FAF22 /* JSONMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONMappable.swift; path = GSFoundation/Classes/JSONMappable.swift; sourceTree = "<group>"; };
 		8DDA35F3E180D888715EE64B8FA5D163 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
-		8FBADA4FDD9CD8D367217860A78A8DCA /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
+		8FBADA4FDD9CD8D367217860A78A8DCA /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
 		90EEF0B218FD9EAA6E5123C5D488CAD4 /* Pods-GSUIKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GSUIKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		90F674C01E2538FDCDF5F9E551B4F9FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		918B0668578FB33F53C1DB3EBB1ECB50 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		93301B808BB11EF1EA04100D39EA8D04 /* Pods-GSUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		9344EDA55C9F9401EB055F4720F7F6F8 /* GSUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GSUIKit.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9344EDA55C9F9401EB055F4720F7F6F8 /* GSUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GSUIKit.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9464A3D256A8089E9F7B1EAAFC2D88B3 /* Pods-GSUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		96321579820D841FB6E44BB34E0413EA /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
 		96E8668AD7503A4931B6C011B9A162FD /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = GSFoundation/Classes/Async.swift; sourceTree = "<group>"; };
-		971259AC5BB36C9584A6C42FD54A082B /* GSFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		971259AC5BB36C9584A6C42FD54A082B /* GSFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GSFoundation.framework; path = GSFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C51BBED63A620C91EE029DC7DF9F29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9CA3E95322FE279EB01D2DA7EB18DA82 /* Pods-GSUIKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSUIKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		9F747FD4D28F637E7135483F4287026C /* GSStability-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSStability-umbrella.h"; sourceTree = "<group>"; };
 		A0093BCA3CA0E2D102B2CDB8EBDC4E60 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		A1C3CAD2F79806A9BB3402C934427BB9 /* ViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewProtocols.swift; path = GSUIKit/Classes/ViewProtocols.swift; sourceTree = "<group>"; };
 		A1E25A6479E6BFF4B6855F000D9E9980 /* Pods-GSUIKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSUIKit_Tests-resources.sh"; sourceTree = "<group>"; };
-		A4724AA99FB9AE2F867F2C4E7D171B96 /* Pods-GSUIKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GSUIKit_Example.modulemap"; sourceTree = "<group>"; };
+		A4724AA99FB9AE2F867F2C4E7D171B96 /* Pods-GSUIKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GSUIKit_Example.modulemap"; sourceTree = "<group>"; };
 		A5A98F68BF46A7FC677204BC65B76233 /* GSFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GSFoundation-dummy.m"; sourceTree = "<group>"; };
-		A62668ECCF0FD69CA8E030A398423C61 /* GSStability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSStability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62668ECCF0FD69CA8E030A398423C61 /* GSStability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GSStability.framework; path = GSStability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F17B1E28F5B36D3151006747B224F5 /* Pods-GSUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC86C5231802BCCFFE4D2B6F53F68DC8 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		AC92F20265AECB819A4FD6A51DC1976E /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
@@ -264,7 +264,7 @@
 		B28181BAF6386957698552B8BA075AD7 /* Pods-GSUIKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSUIKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		B47AD000CC928DE985332FBC5B1170AB /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		BDC040C264759BB8FE194F01BFD3348F /* GSFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSFoundation-umbrella.h"; sourceTree = "<group>"; };
-		C5BF18B24E1D94797D63B91BC2794CEA /* GSStability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GSStability.modulemap; sourceTree = "<group>"; };
+		C5BF18B24E1D94797D63B91BC2794CEA /* GSStability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GSStability.modulemap; sourceTree = "<group>"; };
 		C6526281D5005722CAA35E7553D2E9AC /* GSUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GSUIKit-dummy.m"; sourceTree = "<group>"; };
 		C7EDE7F418E0879CC46121AF215A9D4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA3005896FEF40CBAEA518D6F88370FA /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
@@ -276,15 +276,15 @@
 		DAEDA2CBD7283A8F1388EB554B8E51A5 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
 		DCA9D004D0A9870187E65F45CD78EAF9 /* GSStability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GSStability.xcconfig; sourceTree = "<group>"; };
 		DDB70CA00412F0EE25686A11DF3493C5 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
-		E028FFB195998FEF2C4DEDEF755F2D3E /* Pods_GSUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E130AAD8C5429BF75143C9B9DBF9B568 /* Pods-GSUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GSUIKit_Tests.modulemap"; sourceTree = "<group>"; };
+		E028FFB195998FEF2C4DEDEF755F2D3E /* Pods_GSUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GSUIKit_Tests.framework; path = "Pods-GSUIKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E130AAD8C5429BF75143C9B9DBF9B568 /* Pods-GSUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GSUIKit_Tests.modulemap"; sourceTree = "<group>"; };
 		EAC1336E9383F044CCC1949EEEF1B584 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		EB8DBD57BBAA293F6DE09E80A6ADEFEA /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
 		EBC879F713D46B589B6CC23504F0A0A1 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		F1ECCA472049B3980F5BB27679E8951E /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
 		F2EE9009E35BFDFCA4D40366B2EE1517 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		F3C4D1050DC21F47C74A1E30803CFA38 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		F5922D8BCD0C63DC0EEDCD5DEB5F372A /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5922D8BCD0C63DC0EEDCD5DEB5F372A /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CFDEE58B7E6C8FA49A1A42A0334936 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		F9EF69B6A0010E068415CE77D1A5AC66 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		FFDD0DB2DF7B4487DE0CB3521C74CDF5 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
@@ -448,6 +448,7 @@
 				650066AD92EBB961F2F818E9A8A9E401 /* Wrapper.swift */,
 				8809CF61564E73D6B112244DEDC9D841 /* Support Files */,
 			);
+			name = GSStability;
 			path = GSStability;
 			sourceTree = "<group>";
 		};
@@ -457,6 +458,7 @@
 				F1ECCA472049B3980F5BB27679E8951E /* Keychain.swift */,
 				07BB90337C39BDF3D6FB72308EF63DED /* Support Files */,
 			);
+			name = KeychainAccess;
 			path = KeychainAccess;
 			sourceTree = "<group>";
 		};
@@ -514,6 +516,7 @@
 				F9CFDEE58B7E6C8FA49A1A42A0334936 /* UILayoutSupport+Extensions.swift */,
 				52F3E7E7D29DEEB1EF71E405201EABCB /* Support Files */,
 			);
+			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -617,6 +620,7 @@
 				36CA5FD1E9B2D8A2A5B9102EDE09758E /* Timer.swift */,
 				0D6D6509C0FE8EFFAEE4C08F584974BB /* Support Files */,
 			);
+			name = GSFoundation;
 			path = GSFoundation;
 			sourceTree = "<group>";
 		};
@@ -830,7 +834,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1437,7 +1441,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
